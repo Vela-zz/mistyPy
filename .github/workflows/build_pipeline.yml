@@ -33,6 +33,8 @@ jobs:
         name: python-package-distributions
         path: dist/
   github-release:
+    needs:
+      - build
     runs-on: ubuntu-latest
     permissions:
       contents: write
