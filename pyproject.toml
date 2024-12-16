@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "Misty-SDK"
+version = "0.2.0"
+description = "Python SDK for Misty 2 Robots"
+authors = ["Misty Robotics <engineering.admin@mistyrobotics.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://www.mistyrobotics.com/"
+repository = "https://github.com/MistyCommunity/Python-SDK"
+documentation = "https://docs.mistyrobotics.com/"
+packages = [
+    { include = "mistyPy" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+requests = ">=2.25.1"
+websocket-client = ">=0.57.0"
+yapf = ">=0.30.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
